@@ -1,0 +1,125 @@
+:root {
+    --bgc-primary: #d0e3e5;
+    --text-primary: #000;
+    --border-black: #000;
+    --bgc-btn-primary: #afaeb1;
+    --toggle-btn-primary: #686769;
+    --toggle-btn-float: #fff;
+}
+
+.dark-mode{
+    --bgc-primary: rgba(6, 0, 18, 0.7);
+    --text-primary: #fff;
+    --border-black: #fff;
+    --bgc-btn-primary: #211a28;
+    --toggle-btn-primary: #fff;
+    --toggle-btn-float: #686769;
+}
+body{
+    background: url("../image/main-bgc.jpg") center center/cover no-repeat;
+}
+h4 , span , i ,h5{
+    color: var(--text-primary);
+}
+/*---------- primary --------*/
+.bgc-primary{
+    background-color: var(--bgc-primary);
+    border-radius: 1rem;
+}
+.range-primay{
+    -webkit-appearance: none;
+    margin-top: 0.4rem;
+}
+.range-primay::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    background-color: #4b464e;
+    height: 0.375rem;
+}
+.range-primay::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    margin-top: -0.3125rem;
+    width: 0.5rem;
+    height: 1rem;
+    border-radius: 0!important;
+    background-color: #005CC8;
+}
+/*---------- header --------*/
+nav{
+    padding: 1rem;
+}
+.upload{
+    content: '';
+}
+.nav-left i{
+    font-size: 1.25rem;
+}
+.nav-subtext{
+    font-size: 1rem;
+}
+.mode-page{
+    margin-right: 0.4rem;
+}
+.toggle-btn{
+    width: 2.3rem;
+    height: 1.3rem;
+    padding: 0.2rem;
+    background-color: var(--toggle-btn-primary);
+}
+.float-btn{
+    width:0.9375rem;
+    height: 100%;
+    background-color: var(--toggle-btn-float);
+}
+.toggle-active{
+    transform: translateX(100%);
+}
+.toggle-deactive{
+    transform: translateX(0);
+}
+/*---------- aside --------*/
+.aside{
+    padding: 2rem;
+}
+.tool{
+    position: relative;
+    text-align: center;
+}
+.tool-icon{
+    position: absolute;
+    left: -1.4125rem;
+    top: -0.6rem;
+    font-size: 1.2rem;
+}
+.tool-content{
+    border-top: 1px solid var(--border-black);
+    padding: 0.5rem 1rem;
+}
+.btn-tool{
+    all: unset;
+    background-color: var(--bgc-btn-primary);
+    padding: 0.5125rem;
+    border-radius: 0.3125rem;
+}
+/*---------- aside --------*/
+.studio{
+    position: relative;
+}
+.icon-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.icon-right i{
+    font-size: 1.5rem;
+}
+.img-wrapper{
+    width: 667px;
+    height: 618px;
+    display: none;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    filter: opacity(100%) brightness(1) blur(1px) contrast(1) grayscale(0) hue-rotate(0);
+}

@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ImageFilter</title>
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <header class="bgc-primary">
+            <nav class="d-flex align-items-center justify-content-between">
+                <div class="nav-left">
+                    <input type="file" class="upload d-none" id="upload" accept="image/*">
+                    <label for="upload">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </label>
+                </div>
+                <div class="nav-center">
+                    <h4>Image Filter <span class="nav-subtext">GreatBritain</span></h4>
+                </div>
+                <div class="nav-right">
+                    <div class="d-flex align-items-center ">
+                        <span class="mode-page">Night Mode</span>
+                        <div class="toggle-btn rounded-pill">
+                            <div class="float-btn rounded-pill toggle-deactive"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+         <div class="row mt-3 p-1">
+             <div class="col-9 bgc-primary">
+                 <div class="studio w-100 h-100 d-flex align-items-center justify-content-center">
+                     <div class="icon-right d-flex justify-content-center flex-column">
+                         <i class="fa-solid fa-trash mb-3 trash"></i>
+                         <i class="fa-solid fa-download download"></i>
+                     </div>
+                     <div class="img-wrapper">
+                         <img src="" alt="img">
+                     </div>
+                 </div>
+             </div>
+             <div class="col-3">
+                 <div class="tools bgc-primary aside">
+                     <div class="tool">
+                         <i class="fa-solid fa-wrench tool-icon"></i>
+                         <div class="tool-content">
+                             <div>
+                                 <h5>Opacity</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="0" max="100" value="100" id="oy-range">
+                                     <span class="tool-vlaue d-block mt-2">100%</span>
+                                 </div>
+                             </div>
+                             <div class="mt-3">
+                                 <button class="btn-tool mx-1 btn-rotate-left ">
+                                     <i class="fa-solid fa-rotate-left"></i>
+                                 </button>
+                                 <button class="btn-tool mx-1 btn-rotate-right">
+                                     <i class="fa-solid fa-rotate-right"></i>
+                                 </button>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="tool">
+                         <i class="fa-solid fa-wrench tool-icon"></i>
+                         <div class="tool-content">
+                             <div class="mb-5">
+                                 <h5>Brightness</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="1" max="100" value="100" id="bs-range">
+                                     <span class="tool-vlaue d-block mt-2">100%</span>
+                                 </div>
+                             </div>
+                             <div class="mb-5">
+                                 <h5>Blur</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="0" max="100" value="0" id="br-range">
+                                     <span class="tool-vlaue d-block mt-2">0%</span>
+                                 </div>
+                             </div>
+                             <div class="mb-5">
+                                 <h5>Contrast</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="0" max="100" value="100" id="ct-range">
+                                     <span class="tool-vlaue d-block mt-2">100%</span>
+                                 </div>
+                             </div>
+                             <div class="mb-5">
+                                 <h5>GrayScale</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="0" max="100" value="0" id="ge-range">
+                                     <span class="tool-vlaue d-block mt-2">0%</span>
+                                 </div>
+                             </div>
+                             <div>
+                                 <h5>Hue</h5>
+                                 <div>
+                                     <input type="range" class="range-primay" min="0" max="100" value="0" id="he-range">
+                                     <span class="tool-vlaue d-block mt-2">0%</span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
