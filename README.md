@@ -8,7 +8,7 @@ With this project, you can change and edit photos in a very simple way. This is 
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/SQymBzY/Annotation-2023-03-09-171129.png)
+![App Screenshot](https://i.imgur.com/NRhwwvc.png)
 
 
 
